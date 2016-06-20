@@ -5,7 +5,7 @@
 	$harry = new Personnage("Harry");
 
 	$merlin->attaque($harry);
-
+	
 	var_dump($merlin);
 	var_dump($harry);
 ?>

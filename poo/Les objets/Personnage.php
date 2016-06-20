@@ -21,12 +21,12 @@
 			}
 		}
 
-		public function attaque($cible) {
-			var_dump($cible);
-		}
-
 		public function mort() {
 			return $this->vie <= 0;
+		}
+
+		public function attaque($cible) {
+			$cible->vie -= $this->atk;
 		}
 	}
 ?>
