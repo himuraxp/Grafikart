@@ -1,7 +1,7 @@
 <ul>
-	<?php foreach ($db->query('SELECT * FROM articles') as $post): ?>
+	<?php foreach ($db->query('SELECT * FROM blog.articles') as $post): ?>
 		<li>
-			<a href="index.php?p=post&id=<?= $post->id; ?>"><?= $post->title; ?></a> 
+			<a href="index.php?p=post&id=<?= $post->id; ?>"><?= $post->title; ?></a>
 		</li>
 	<?php endforeach; ?>
 </ul>

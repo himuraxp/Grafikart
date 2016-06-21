@@ -10,8 +10,8 @@
 	}
 
 	// Initialisation des objets
-	$db = App\Database('blog');
-	
+	$db = new App\Database('blog');
+	var_dump($db);	
 	ob_start();
 	if ($p === 'home') {
 		require '../pages/home.php';
